@@ -230,3 +230,16 @@ List of all the page events:
 * onClosing
 
 For more information check this in depth [example](https://github.com/ariya/phantomjs/blob/master/examples/page_events.js).
+
+Best practice which really help me to implement effecient automation is to use try catch finally block
+
+try{
+	console.log("hello, world" + arg[0]);
+}
+catch(err)
+{
+	console.log(err);
+}
+finally{
+	phantom.exit();
+}
